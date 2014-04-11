@@ -1,8 +1,15 @@
-== Spring Sample Application using Redis and PostgreSQL Services
+###Spring Sample Application using Redis and PostgreSQL Services
 
+We wrote a Spring example application using Redis and PostgreSQL services. 
 
-Just follow these steps to deploy the appliation:
+To clone the application simply run:
+<pre>
+git clone git@github.com:anynines/springmvc-hibernate-template.git
+</pre>
 
+```cd``` into your new directory and follow the steps in the wizard to deploy the app on [anynines](http://www.anynines.com):
+
+<pre>
 1)> cf target
 https://api.de.a9s.eu
 >> Setting target to https://api.de.a9s.eu... OK
@@ -122,5 +129,6 @@ name        status    usage      url
 caldecott   running   1 x 128M   caldecott-4dc80.de.a9sapp.eu
 notes       running   1 x 256M   notes.de.a9sapp.eu
 springmvc   running   1 x 512M   springmvc.de.a9sapp.eu
+</pre>
 
-6) Open the url specified for the application in your web browser.
+Open the url specified for the application in your web browser.
