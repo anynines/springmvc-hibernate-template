@@ -9,7 +9,8 @@ git clone git@github.com:anynines/springmvc-hibernate-template.git
 
 ##Pre-requisites
 
-1) Install maven -> (brew: brew install maven)
+1. Install maven -> [Apache Maven](http://maven.apache.org/download.cgi)
+2. Install the cf cli -> [CF CLI installation tutorial](https://anynines.zendesk.com/entries/60241846-How-to-install-the-CLI-v6)
 
 ## The following instructions are valid for the cf cli v6!!!
 
@@ -35,9 +36,9 @@ git clone git@github.com:anynines/springmvc-hibernate-template.git
 
 6. ##### create the needed services:
 	<pre>
-	  $> cf create-service redis 100 redis-your_app_name		
+	  $> cf create-service redis 100 redis-your_app_name
 	  $> cf create-service postgresql Pluto-free postgresql-your_app_name
-	</pre>	
+	</pre>
 
 7. ##### deploy your app
 	<pre> $> cf push </pre>
