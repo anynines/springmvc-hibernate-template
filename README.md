@@ -14,32 +14,37 @@ git clone git@github.com:anynines/springmvc-hibernate-template.git
 
 #### The following instructions are valid for the cf cli v6!!!
 
-* ##### Connect to the anynines api
+* **Connect to the anynines api**
 	<pre>$> cf api https://api.de.a9s.eu</pre>
-* ##### Login to anynines
+
+* **Login to anynines**
 	<pre>$> cf login</pre>
 	<pre>
 	target: https://api.de.a9s.eu
 	Email> user@example.com
 	Password> **********
 	Authenticating... OK</pre>
-* ##### Build the project using maven
+
+* **Build the project using maven**
 	<pre>$> mvn package</pre>
 	<pre>Maven Build Output ...	</pre>
-* ##### Copy over the manifest template
+
+* **Copy over the manifest template**
 	<pre>$> cp manifest.yml.v6 manifest.yml</pre>
 
-* ##### Adjust the manifest.yml file with our desired app name and route (replace "your_app_name")
+* **Adjust the manifest.yml file with our desired app name and route (replace "your_app_name")**
 	<pre> vim manifest.yml </pre>
     
-* ##### Create the needed services:
+* **Create the needed services**
 	<pre>
 	  $> cf create-service redis 100 redis-your_app_name
 	  $> cf create-service postgresql Pluto-free postgresql-your_app_name
 	</pre>
-* ##### Deploy your app
+
+* **Deploy your app**
 	<pre> $> cf push </pre>
-* ##### Check your app's status
+
+* **Check your app's status**
 	<pre> $> cf app your_app_name </pre>
 
 Open the url specified for the application in your web browser.
