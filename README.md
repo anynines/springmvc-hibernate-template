@@ -12,7 +12,7 @@ git clone git@github.com:anynines/springmvc-hibernate-template.git
 1. Install maven -> [Apache Maven](http://maven.apache.org/download.cgi)
 2. Install the cf cli -> [CF CLI installation tutorial](https://anynines.zendesk.com/entries/60241846-How-to-install-the-CLI-v6)
 
-## The following instructions are valid for the cf cli v6!!!
+#### The following instructions are valid for the cf cli v6!!!
 
 1. <pre>$> cf api https://api.de.a9s.eu</pre>
 
