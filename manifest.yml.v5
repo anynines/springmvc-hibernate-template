@@ -1,0 +1,20 @@
+---
+applications:
+- name: your_app_name
+  memory: 512M
+  instances: 1
+  host: your_app_name
+  domain: de.a9sapp.eu
+  path: target/web-1.0.0.war
+  buildpack: https://github.com/cloudfoundry/java-buildpack.git
+  services:
+    redis-your_app_name:
+      label: redis
+      provider: core
+      version: '2.2'
+      plan: '100'
+    postgresql-your_app_name:
+      label: postgresql
+      provider: core
+      version: '9.0'
+      plan: 'Pluto-free'
